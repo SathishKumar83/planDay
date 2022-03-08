@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Day Planner</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+
+
+
+
+  <body >
+    <div class="box" id="heading">
+      <h1>Day Planner</h1>
+    <h2> <%=date%> </h2>
+    </div>
+
+
+<div class="box">
+
+<% for(var i=0;i<tasklist.length;i++){ %>
+<div class="item">
+  <input type="checkbox"">
+   <%= tasklist[i] %>
+</div>
+<%} %>
+<form class="item" action="/" method="post">
+      <input type="text" name="Task" placeholder="Task Name" autocomplete="off">
+      <button type="submit" name="button">+</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+  </body>
+</html>
